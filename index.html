@@ -43,18 +43,18 @@
 <body>
     <div class="container">
         <h1>SIGN UP WITH YOUR EMAIL</h1>
-        <form action="" novalidate>
+        <form id="subForm" action="" onsubmit="isValid();return false" novalidate>
             <div class="inputField">
-                <label for="email">Email:</label>
-                <input type="email" name="userEmail" id="userEmail"> <br>
+                <label for="userEmail">Email:</label>
+                <input type="email" name="userEmail" id="userEmail" required> <br>
             </div>
             <div class="inputField">
                 <label for="userPass">Password:</label>
-                <input type="password" name="userPass" id="userPass"> <br>
+                <input type="password" name="userPass" id="userPass" required> <br>
             </div>
             <div class="inputField">
                 <label for="dob">Date of Birth</label>
-                <input type="date" name="dob" id="dob">  <br>       
+                <input type="date" name="dob" id="dob" required>  <br>       
             </div>
             <div class="inputField">
                 <input type="checkbox" name="sendOffer" id="sendOffers">
@@ -66,7 +66,7 @@
             </div>   
             <p>You can change your preferences at any time</p>
             <div class="inputField">
-                <input type="checkbox" name="t&c" id="t&c">
+                <input type="checkbox" name="t&c" id="t&c" required>
                 <label for="t&c">
                     I agree to the <a href="*">Terms & Conditions,</a>
                     <a href="*">Privacy Policy</a> and 
@@ -74,7 +74,7 @@
                 </label> <br>
             </div>
             <div class="inputField">
-                <input type="submit" value="Submit">
+                <input id="submitButton" type="submit" value="Submit">
             </div>                        
         </form>
     </div>
