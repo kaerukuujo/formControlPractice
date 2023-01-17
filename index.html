@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Control Practice</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0px;
+        }
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            /* justify-content: center; */
+            background-color: rgb(255, 179, 179);
+            height: max-content;
+            margin-top: 5%;
+            margin-bottom: 15%;
+            padding: 50px;
+            gap: 30px;
+        } 
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+        }
+        .inputField {
+            display: flex;
+            gap: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>SIGN UP WITH YOUR EMAIL</h1>
+        <form action="" novalidate>
+            <div class="inputField">
+                <label for="email">Email:</label>
+                <input type="email" name="userEmail" id="userEmail"> <br>
+            </div>
+            <div class="inputField">
+                <label for="userPass">Password:</label>
+                <input type="password" name="userPass" id="userPass"> <br>
+            </div>
+            <div class="inputField">
+                <label for="dob">Date of Birth</label>
+                <input type="date" name="dob" id="dob">  <br>       
+            </div>
+            <div class="inputField">
+                <input type="checkbox" name="sendOffer" id="sendOffers">
+                <label for="sendOffer">Send me offers, news and updates about Company</label> <br>
+            </div>
+            <div class="inputField">
+                <input type="checkbox" name="shareData" id="shareData">
+                <label for="shareData">See more relevant content by sharing my data with third parties</label>                
+            </div>   
+            <p>You can change your preferences at any time</p>
+            <div class="inputField">
+                <input type="checkbox" name="t&c" id="t&c">
+                <label for="t&c">
+                    I agree to the <a href="*">Terms & Conditions,</a>
+                    <a href="*">Privacy Policy</a> and 
+                    <a href="*">End User License Agreement</a>            
+                </label> <br>
+            </div>
+            <div class="inputField">
+                <input type="submit" value="Submit">
+            </div>                        
+        </form>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
